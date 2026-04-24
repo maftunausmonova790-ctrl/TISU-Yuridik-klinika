@@ -20,8 +20,8 @@ logger = logging.getLogger(__name__)
 # ═══════════════════════════════════════════════════════════════
 #  SOZLAMALAR
 # ═══════════════════════════════════════════════════════════════
-BOT_TOKEN  = os.getenv("8743518365:AAEoy4ulgxbdIsyxrAXVUzQRhqf-yu41mek", "")
-ADMIN_IDS  = list(map(int, os.getenv("8332810731", "0").split(",")))
+BOT_TOKEN = os.getenv("BOT_TOKEN") or os.environ.get("BOT_TOKEN", "")
+ADMIN_IDS  = list(map(int, os.getenv("ADMIN_IDS", "0").split(",")))
 DB_PATH    = "legal_bot.db"
 BOT_NAME   = os.getenv("BOT_NAME", "Yuridik Maslahat Boti")
 
